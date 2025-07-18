@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-  // Optional: your styles for the table
+  
 
 function List() {
   const [display, setDisplay] = useState([]);
