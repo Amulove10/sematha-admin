@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-  
+  import '../Prolist/list.css'
 
 function List() {
   const [display, setDisplay] = useState([]);
@@ -10,6 +10,8 @@ function List() {
       .then(data => setDisplay(data))
       .catch(err => console.error('Fetch error:', err));
   }, []);
+
+
 
   return (
     <div>
@@ -42,6 +44,7 @@ function List() {
                     'No image'
                   )}
                 </td>
+               
               </tr>
             ))}
           </tbody>

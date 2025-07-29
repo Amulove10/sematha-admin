@@ -1,0 +1,64 @@
+/* Dashboard Heading */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2b2b2b;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Count Cards */
+.count-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.count-container>div {
+    background: linear-gradient(135deg, #1e40af, #6366f1);
+    color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.count-container>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.6);
+}
+
+.count-container h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #e0e7ff;
+}
+
+.count-container p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Chart Styling */
+.chart-wrapper {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chart-wrapper h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #131313;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}

@@ -28,4 +28,24 @@ const displayblog = (req, res) => {
   });
 };
 
-module.exports = { blogpost, displayblog };
+const edit = async (req, res) => {
+  const { id } = req.params;
+  const { title, content } = req.body;
+  let query = ''
+  let values = []
+
+  if (req.file){
+    db.query('UPDATE blog SET title = ?, content = ?, image = ? WHERE id = ?', [title, content, req.file.filename, id], (err, result) => {
+      if(err)return res.status(500).json({message: 'error updating data'})
+    })
+  } else {
+    db.query('UPDATE blog SET title = ?, content = ? WHERE id=?', [title, content, id], (err, result) => {
+      if(err) return res.status(500).json({message:'error updating info'})
+    })
+  }
+
+  await db.execute(query, values)
+  return res.status(200).json({message:'Blog updated successfully'})
+}
+
+module.exports = { blogpost, displayblog, edit };

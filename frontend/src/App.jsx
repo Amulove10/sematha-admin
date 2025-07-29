@@ -5,6 +5,7 @@ import Addproject from './pages/addpro/Addproject'
 import Projectlist from './pages/Prolist/Projectlist'
 import Blog from './pages/blog/Blog'
 import List from './pages/bloglist/List'
+import Count from './pages/count/Count'
 // import Register from './pages/Login'
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        {/* <Route path='/' element={<Register/>} /> */}
+        <Route path='/' element={<Count/>}/>
         <Route path='/project' element={<Projectlist />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/bloglist' element={<List />} />

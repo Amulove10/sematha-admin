@@ -9,22 +9,23 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Heading */
+
 .add-blog-container h1 {
+    font-size: 2.5rem;
     text-align: center;
-    color: #222;
-    font-size: 28px;
-    margin-bottom: 25px;
+    color: #2b2b2b;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Form */
+
 .blog-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Label and Input Fields */
+
 .form-group {
     display: flex;
     flex-direction: column;
